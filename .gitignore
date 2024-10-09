@@ -1,0 +1,24 @@
+# Ignore target directory
+target/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+
+# Ignore Maven build files
+*.log
+*.jar
+*.war
+*.ear
+
+# Ignore local repository files
+repository/
+
+# Ignore build artifacts
+*.class
+*.jar.dSYM/
+*.war.dSYM/
+
+# Ignore generated sources and resources
+generated-sources/
+generated-test-sources/
