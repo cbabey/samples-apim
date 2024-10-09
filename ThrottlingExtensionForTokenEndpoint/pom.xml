@@ -13,6 +13,7 @@
     <version>1.0.0</version>
     <packaging>bundle</packaging>
 <dependencies>
+
     <dependency>
         <groupId>org.wso2.carbon.apimgt</groupId>
         <artifactId>org.wso2.carbon.apimgt.common.gateway</artifactId>

@@ -59,10 +59,8 @@ public class TokenThrottlingExtensionImpl implements ExtensionListener {
             // If a client ID was successfully extracted
             if (clientID != null) {
                 responseDTO = new ExtensionResponseDTO(); // Create a new ExtensionResponseDTO
-
                 // Set a custom property to include the extracted client ID
-                responseDTO.setCustomProperty(Collections.singletonMap("clientID", clientID));
-
+                responseDTO.setCustomProperty(new HashMap<String, Object>() {{ put("clientID", clientID); }});
                 // Set the response status to continue processing
                 responseDTO.setResponseStatus(ExtensionResponseStatus.CONTINUE.toString());
             }
